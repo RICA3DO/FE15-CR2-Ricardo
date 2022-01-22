@@ -1,0 +1,90 @@
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    float: left;
+    padding-left: 2em;
+  }
+h4{
+      font-size: 30px;
+      margin-left: 67em;
+      float: left;
+  }
+.search {
+      width: 3em;
+      height: 3em;
+      background-color: white;
+      border-color: white;
+      border-width: 0em;
+      margin-right: 5em;
+      margin-top: 3em;
+      float: right;
+  }
+.categories {
+    text-decoration: overline;
+    text-align: center;
+  }
+.main {
+    display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.box {
+      width: 500px;
+      height: 250px;
+      flex: auto;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+.break{
+      width: 100%;
+      height: 100%;
+  }
+.cake{
+    width: 100%;
+    height: 100%;
+  }
+.cereal{
+    width: 100%;
+    height: 100%;
+  }
+.cupcake{
+    width: 100%;
+    height: 100%;
+  }
+.hamburger{
+    width: 100%;
+    height: 100%;
+  }
+  .pizza{
+    width: 100%;
+    height: 100%;
+  }
+  .pancake{
+    width: 100%;
+    height: 100%;
+  }
+.saladBowl{
+    width: 100%;
+    height: 100%;
+  } 
+.spaghetti{
+    width: 100%;
+    height: 100%;
+  }
+  footer{
+      background-color: black;
+      color: white;
+      margin-bottom: -20px;
+      text-align: center;
+      button{
+          background-color: black;
+      }
+      p{
+        font-style: italic;
+    }
+    nav{
+      font-size: 2em;
+      justify-content: space-around;
+    }
+  }
