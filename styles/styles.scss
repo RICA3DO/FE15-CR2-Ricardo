@@ -1,3 +1,7 @@
+header{
+  display: flex;
+  justify-content: space-between;
+}
 h1{
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
@@ -9,6 +13,18 @@ h4{
       margin-left: 67em;
       float: left;
   }
+p {
+    opacity: 0.8;
+    background: white;
+    padding: 1px;
+    font-size: 3vw;
+  }
+h2 {
+  opacity: 0.8;
+  background: white;
+  padding: 1px;
+  font-size: 2vw;
+}
 .search {
       width: 3em;
       height: 3em;
@@ -20,57 +36,140 @@ h4{
       float: right;
   }
 .categories {
-    text-decoration: overline;
+    width: 100%;
+    background-color: white;
     text-align: center;
-  }
-.main {
-    display : flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    flex-wrap: wrap;
+    ul {
+      li {
+        display: inline-block;
+        list-style: none;
+        line-height: 1vw;
+        width: 11%;
+        a {
+          display: block;
+          text-decoration: none; 
+          font-size: 2em;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color: #1e1e1e;
+          padding: 3px 10px;
+          width: 100%;
+        }
+      }
+    }
 }
+.main {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  background-color: white;
+  padding: 5px;
+  }
 .box {
-      width: 500px;
-      height: 250px;
-      flex: auto;
-      flex-direction: row;
-      justify-content: space-around;
+      background-image: url(../breakfast.jpg);
+      background-size: cover;
+      margin: 15px;
+      width: 85vw;
+      height: 70vw;
+      object-fit: cover;
+      text-align: center;
+      display: flex;                   
+      flex-direction: column-reverse; 
   }
-.break{
-      width: 100%;
-      height: 100%;
-  }
-.cake{
-    width: 100%;
-    height: 100%;
-  }
-.cereal{
-    width: 100%;
-    height: 100%;
-  }
-.cupcake{
-    width: 100%;
-    height: 100%;
-  }
-.hamburger{
-    width: 100%;
-    height: 100%;
-  }
-  .pizza{
-    width: 100%;
-    height: 100%;
-  }
-  .pancake{
-    width: 100%;
-    height: 100%;
-  }
-.saladBowl{
-    width: 100%;
-    height: 100%;
-  } 
-.spaghetti{
-    width: 100%;
-    height: 100%;
+  .box1 {
+    background-image: url(../cake.jpg);
+    background-size: cover;
+    margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;
+}
+.box2 {
+  background-image: url(../cereal.jpg);
+  background-size: cover;
+  margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;
+}
+.box3 {
+  background-image: url(../cupcake.jpg);
+  background-size: cover;
+  margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;
+}
+.box4 {
+  background-image: url(../hamburger.jpg);
+  background-size: cover;
+  margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;
+}
+.box5 {
+  background-image: url(../pizza.jpg);
+  background-size: cover;
+  margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;
+}
+.box6 {
+  background-image: url(../pancake.jpg);
+  background-size: cover;
+  margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;
+}
+.box7 {
+  background-image: url(../saladBowl.jpg);
+  background-size: cover;
+  margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;
+}
+.box8 {
+  background-image: url(../spaghetti.jpg);
+  background-size: cover;
+  margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;
+}
+footer > p {
+  margin-top: 0.5vw;
+  background-color: black;
+  color: white;
   }
   footer{
       background-color: black;
@@ -87,4 +186,71 @@ h4{
       font-size: 2em;
       justify-content: space-around;
     }
+  }
+  @media screen and (min-width: 480px) {
+    ul {
+      line-height: 3vw;
+    }
+    ul li a {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1vw;
+    }
+    h3 {
+      font-size: 1vw;
+    }
+    .box {
+    width: 22vw;
+    height: 20vw;
+    }
+    .box1 {
+      width: 22vw;
+      height: 20vw;
+    }
+    .box2 {
+      width: 22vw;
+      height: 20vw;
+    }
+    .box3 {
+      width: 22vw;
+      height: 20vw;
+    }
+    .box4 {
+      width: 22vw;
+      height: 20vw;
+    }
+    .box5 {
+      width: 22vw;
+      height: 20vw;
+    }
+    .box6 {
+      width: 22vw;
+      height: 20vw;
+    }
+    .box7 {
+      width: 22vw;
+      height: 20vw;
+    }
+    .box8 {
+      width: 22vw;
+      height: 20vw;
+    }
+    .main {
+      grid-template-columns: 35% 35% 35%;
+      padding: 15px;
+    }
+    .search {
+      min-width: none;
+    }
+    
+  }
+  @media screen and (min-width: 700px) {
+      .main {
+          grid-template-columns: 30% 30% 30%;
+          padding: 20px;
+      }
+      .search {
+          min-width: 10%;
+        }
   }
